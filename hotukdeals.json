@@ -1,0 +1,17 @@
+{
+    "name": "reddit",
+    "baseUrl": "http://www.hotukdeals.com/",
+    "nextUrlDescriptor": {
+        "selector": ".redesign-pagination .p-next a",
+        "extract": "href"
+    },
+    "itemTypes": [{
+        "name": "deal",
+        "container": ".s-items-listings",
+        "selector": ".redesign-item-listing",
+        "properties": {
+            "title": "a.title",
+            "votes": ".voting-controls .temperature"
+        }
+    }]
+}
