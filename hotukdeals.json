@@ -11,7 +11,8 @@
         "selector": ".redesign-item-listing",
         "properties": {
             "title": "a.title",
-            "votes": ".voting-controls .temperature"
-        }
+            "temperature": ".voting-controls .temperature"
+        },
+        "template": "{{ temperature }} {{ title }}"
     }]
 }
