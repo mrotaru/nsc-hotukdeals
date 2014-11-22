@@ -9,10 +9,12 @@
         "name": "deal",
         "container": ".s-items-listings",
         "selector": ".redesign-item-listing",
+        "exclude": ".newsletter-subscription-inline",
         "properties": {
             "title": "a.title",
             "temperature": ".voting-controls .temperature"
         },
         "template": "{{ temperature }} {{ title }}"
-    }]
+    }],
+    "sanitizers": ["trim"]
 }
