@@ -1,5 +1,5 @@
 {
-    "name": "reddit",
+    "name": "hotukdeals",
     "baseUrl": "http://www.hotukdeals.com/",
     "nextUrlDescriptor": {
         "selector": ".redesign-pagination .p-next a",
