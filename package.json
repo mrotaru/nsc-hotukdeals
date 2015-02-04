@@ -1,6 +1,6 @@
 {
-  "name": "nsc-hotukdeals",
-  "version": "0.0.1",
+  "name": "hotukdeals",
+  "version": "0.0.2",
   "description": "HotUKDeals spider for nsc scraper",
   "main": "hotukdeals.json",
   "keywords": [

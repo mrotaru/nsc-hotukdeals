@@ -1,18 +1,19 @@
 {
     "name": "reddit",
     "baseUrl": "http://www.hotukdeals.com/",
+    "cookies": true,
     "nextUrlDescriptor": {
-        "selector": ".redesign-pagination .p-next a",
+        "selector": ".navPagination a.paginationButton--arrow-next",
         "extract": "href"
     },
     "itemTypes": [{
         "name": "deal",
-        "container": ".s-items-listings",
-        "selector": ".redesign-item-listing",
+        "container": ".content-layout-main",
+        "selector": ".threadType--deals",
         "exclude": ".newsletter-subscription-inline",
         "properties": {
-            "title": "a.title",
-            "temperature": ".voting-controls .temperature"
+            "title": "a.thread-title-text",
+            "temperature": ".thread-votingTemperature-temperature"
         },
         "template": "{{ temperature }} {{ title }}"
     }],
