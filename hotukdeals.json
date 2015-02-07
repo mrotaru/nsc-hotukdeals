@@ -3,17 +3,17 @@
     "baseUrl": "http://www.hotukdeals.com/",
     "cookies": true,
     "nextUrlDescriptor": {
-        "selector": ".navPagination a.paginationButton--arrow-next",
+        "selector": ".redesign-pagination li.p-next a",
         "extract": "href"
     },
     "itemTypes": [{
         "name": "deal",
-        "container": ".content-layout-main",
-        "selector": ".threadType--deals",
+        "container": ".s-main-content",
+        "selector": ".redesign-item-listing",
         "exclude": ".newsletter-subscription-inline",
         "properties": {
-            "title": "a.thread-title-text",
-            "temperature": ".thread-votingTemperature-temperature"
+            "title": ".thread-content h2",
+            "temperature": ".voting-controls span.temperature"
         },
         "template": "{{ temperature }} {{ title }}"
     }],
